@@ -1,0 +1,68 @@
+#header{
+    
+    border:1px;
+    width:100%;
+    height:200px;
+    
+    
+}
+/* 头部*/
+
+.tag{
+    background-color: maroon;
+    border:1px solid black;
+    width:100%;
+    height:35px;
+    font-size:20px;
+    text-align: center;
+   
+   }
+   /* 导航栏*/
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+#cen_right_top{position: relative; width:720px;margin:40px auto 0 auto;top:100px;}
+#cen_right_top .active{background:url(../imgs/qiehuan.jpg) no-repeat;color:#F3F3F3;}
+#cen_right_top h3{line-height:35px;text-align:center;float:left;height:35px;width:182px;margin:0px;padding:0px;background-color:#F3F3F3;font-size:14px;color:#333333;font-weight:lighter;cursor:pointer;}
+#cen_right_top div{font-size:14px;display:none;clear:both;height:100px;padding:20px 0px 0px 20px;border-top-width:medium;border-top-style:solid;border-top-color:#A0603D;} 
+
+.info-list>li{
+    margin-bottom: 20px;
+    border-bottom: 1px  solid #ccc;
+    
+}
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    left: 150px;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+ul.pagination>li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd; }
+
+.info-list{
+    display: none;
+}
+.info-list a{
+    color: #A0603D;
+}
