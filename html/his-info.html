@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>本馆概况</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/his-info.css">
+    <link rel="stylesheet" href="../css/history.css">
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/his-info.js"></script>
+    <script>
+        var  index = 0 ;
+    $(document).ready(function(){
+        $(".pagination li a").click(function(){
+             index = $(this).text();
+            $(".pagination li a").removeClass("active");
+            $(this).addClass("active");
+            // console.log($(this).val());
+            
+            console.log(index);
+            $(".info-list").eq(index).show().siblings(':not(.pagination)').hide();
+        });
+
+    });
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div class="row">
+            <div class="head-box">
+            </div>
+        </div>
+        </div>
+        <!--页首-->
+
+        <div class="tag">
+    
+            <div class="row">
+                <div class="col">
+                    <a href="his-info.html" style="color:white">本馆概况</a>
+                </div>
+                <div class="col">
+                    <a href="work.html" style="color:white">工作动态</a>
+                </div>
+                <div class="col">
+                    <a href="#" style="color:white">校史展览</a>
+                </div>
+                <div class="col">
+                    <a href="#" style="color:white">馆藏文物</a>
+                </div>
+                <div class="col">
+                    <a href="#" style="color:white;">校园大使团</a>
+                </div>
+                <div class="col">
+                    <a href="#" style="color:white">服务指南</a>
+                </div>
+            </div>
+
+        </div>
+        <!--导航栏-->
+    </div>
+    <div id="cen_right_top">
+
+                <h3 class="active">校史馆简介</h3>
+                <h3>馆舍位置</h3>
+                <h3>走进锦大每一天</h3>
+        <div style="display:block;"><p style="color:#A0603D;letter-spacing: 6px;word-spacing: 15px;margin:25px auto;">
+            四川大学锦城学院校史馆是在校长的领导下负责保存和利用学校校史资源，拓展校史馆社会功能，对内对外进行宣传教育工作的服务部门。其主要工作职责是起草、制定、落实校史发展规划、计划总结和各项规章制度；校史资料及学校相关展览的收集、整理、布展工作；校史讲解人员的培训、接待师生、校友、嘉宾进行参观；参与各级校史学会、协会活动，开展校际合作、对外交流活动；编制本单位突发事件应急处置预案等。
+            馆舍采用了简约的设计风格，展馆藏品丰富，展现了学校自建立以来的光辉历程。
+            校史馆共分为三个展厅：
+            第一展厅：校史展览馆
+            第二展厅（东厅）：人类文明展览馆
+            第三展厅（西厅）：创新创造展览馆
+            
+        </p>
+            </div>
+        <div>
+        <img src="../imgs/location.jpg"  width="700px" height="500px" alt="" style="margin-top:40px;">
+        <p style="margin:40px 20px;text-align: center;color:#A0603D;">校史馆、东厅、西厅位于四川大学锦城学院和平大楼一楼。</p>
+        </div>
+        <div id="list-info">
+          
+           <ul class="info-list" style="display:block">
+                <li>><a href="#">12.29</a></li>
+                <li>><a href="#">12.28</a></li>
+                <li>><a href="#">12.27</a></li>
+                <li>><a href="#">12.26</a></li>
+                <li>><a href="#">12.25</a></li>
+                <li>><a href="#">12.24</a></li>
+                <li>><a href="#">12.23</a></li>
+                <li>><a href="#">12.22</a></li>
+                <li>><a href="#">12.21</a></li>
+                <li>><a href="#">12.20</a></li>
+            </ul>
+            <ul class="info-list">
+                    <li>><a href="">12.19</a></li>
+                    <li>><a href="#">12.18</a></li>
+                    <li>><a href="#">12.17</a></li>
+                    <li>><a href="#">12.16</a></li>
+                    <li>><a href="#">12.15</a></li>
+                    <li>><a href="#">12.14</a></li>
+                    <li>><a href="#">12.13</a></li>
+                    <li>><a href="#">12.12</a></li>
+                    <li>><a href="#">12.11</a></li>
+                    <li>><a href="#">12.10</a></li>
+                </ul>
+                <ul class="info-list">
+                    <li>><a href="#">12.09</a></li>
+                    <li>><a href="#">12.08</a></li>
+                    <li>><a href="#">12.07</a></li>
+                    <li>><a href="#">12.06</a></li>
+                    <li>><a href="#">12.05</a></li>
+                    <li>><a href="#">12.04</a></li>
+                    <li>><a href="#">12.03</a></li>
+                    <li>><a href="#">12.02</a></li>
+                    <li>><a href="#">12.01</a></li>
+            
+                </ul>
+                    <ul class="pagination" name="pageindex">
+                      <li><a href="#">«</a></li>
+                      <li><a class="active pages" href="#pageindex" value="1" >1</a></li>
+                      <li><a class="pages" href="#pageindex" value="2" >2</a></li>
+                      <li><a class="pages" href="#pageindex" value="3" >3</a></li>
+                      <li><a class="pages" href="#pageindex" value="4" >4</a></li>
+                      <li><a class="pages" href="#pageindex" value="5" >5</a></li>
+                      <li><a class="pages" href="#pageindex" value="6" >6</a></li>
+                      <li><a class="pages" href="#pageindex" value="7" >7</a></li>
+                      <li><a href="#">»</a></li>
+                    </ul>
+        </div>
+   
+    </div>
+</body>
+</html>
